@@ -10,7 +10,7 @@ def main():
   rolls = [0,0,0,0,0,0,0,0,0,0,0]
   #Create two dice values ranging from 1 - 6 each
   
-  for r in range(100):
+  for r in range(10000):
     dice1 = random.randint(1,6)
     dice2 = random.randint(1,6)
     dice = dice1 + dice2
@@ -20,10 +20,14 @@ def main():
   #find the sum total of the two dice
   
   #print statictics for dice rolls
+
   spot = 2
   for count in rolls:
-    print(spot,":",count)
+    chance = int(rolls[spot-2]/sum(rolls)*100)
+    print(spot,":",count,"--",chance,"%")
     spot = spot + 1
+
+
 
 
 if __name__ == '__main__':
