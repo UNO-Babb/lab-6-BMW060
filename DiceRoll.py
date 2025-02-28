@@ -23,7 +23,7 @@ def main():
 
   spot = 2
   for count in rolls:
-    chance = int(rolls[spot-2]/sum(rolls)*100)
+    chance = int(rolls[spot-2]/sum(rolls)*100) # Had to look up a function to sum the components of the list
     print(spot,":",count,"--",chance,"%")
     spot = spot + 1
 
