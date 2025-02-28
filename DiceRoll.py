@@ -10,7 +10,7 @@ def main():
   rolls = [0,0,0,0,0,0,0,0,0,0,0]
   #Create two dice values ranging from 1 - 6 each
   
-  for r in range(10000):
+  for r in range(100000):
     dice1 = random.randint(1,6)
     dice2 = random.randint(1,6)
     dice = dice1 + dice2
