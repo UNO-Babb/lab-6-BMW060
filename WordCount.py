@@ -1,7 +1,7 @@
 #WordCount.py
 #Name: Brennan Wood
-#Date: 
-#Assignment:
+#Date: 2/28/25
+#Assignment: Lab 5 WordCount
 
 def main():
   file = input("Input file name: ")
@@ -9,17 +9,17 @@ def main():
   
   lineCount = 0
   wordCount = 0
-  characterCount = 0
   letterCount = 0
+  alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
   for line in textFile:
-    lineCount = lineCount +1
+    lineCount = lineCount + 1
     words = line.split()
     for w in words:
       wordCount = wordCount + 1
-      words = words.split()
-      for w in words:
-        letterCount = letterCount + 1
+      for c in w:
+        if c.upper() in alpha:
+          letterCount = letterCount + 1
 
 
 
