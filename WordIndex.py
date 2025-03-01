@@ -4,10 +4,11 @@
 #Assignment: Lab 6 WordIndex
 
 def main():
-  textFile = open("fish.txt", 'r')
+  file = input("File name: ")
+  textFile = open(file, 'r')
   
   words = {} #create an empty dictionary
-  
+
   lineNum = 0
   for line in textFile:
     lineNum = lineNum + 1
