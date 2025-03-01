@@ -1,7 +1,7 @@
 #WordCount.py
 #Name: Brennan Wood
 #Date: 2/28/25
-#Assignment: Lab 5 WordCount
+#Assignment: Lab 6 WordCount
 
 def main():
   file = input("Input file name: ")
