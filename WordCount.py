@@ -10,7 +10,6 @@ def main():
   lineCount = 0
   wordCount = 0
   letterCount = 0
-  alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
   for line in textFile:
     lineCount = lineCount + 1
@@ -18,14 +17,13 @@ def main():
     for w in words:
       wordCount = wordCount + 1
       for c in w:
-        if c.upper() in alpha:
-          letterCount = letterCount + 1
+        letterCount = letterCount + 1
 
 
 
   print("Lines: ",lineCount)
   print("Words: ",wordCount)
-  print("Characters (including spaces): ",letterCount)
+  print("Characters (not including spaces): ",letterCount)
 
 
 if __name__ == '__main__':
